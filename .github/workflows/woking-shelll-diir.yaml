@@ -1,10 +1,10 @@
 name: Working Dirs & Shels
 on: [push]
 
-Jobs:
-  display-wd-info:
-    runs-on: ubuntu-latest
-    steps:
+jobs:
+    display-linux-info:
+      runs-on: ubuntu-latest
+      steps:
         - name : Display working Directory and List fiels
           run: |
            pwd
@@ -12,9 +12,9 @@ Jobs:
            echo $GITHUB_SHA
            echo $GITHUB_REPOSITORY
            echo $GITHUB_WORKSPACE
-  display-wd-info:
-    runs-on: windows-latest
-    steps:
+    display-wd-info:
+       runs-on: windows-latest
+       steps:
         - name : Display working Directory and List fiels
           run: |
                    pwd
