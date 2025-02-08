@@ -23,7 +23,7 @@ jobs:
           role-to-assume: arn:aws:iam::924448903064:role/mohit_oidc_test_role
           aws-region: us-east-1
 
-      - name: List of AWS
+      - name: Get AWS caller identity and Listing s3 bucket in US East Region
         run: |
           aws sts get-caller-identity 
           aws s3 ls
