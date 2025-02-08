@@ -17,16 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Display AWS Access Key
-        run: echo "AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}"
-
-      - name: Display AWS Secret Access Key
-        run: echo "AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
-
-      - name: Display AWS Session Token
-        if: secrets.AWS_SESSION_TOKEN != ''
-        run: echo "AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}"
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
