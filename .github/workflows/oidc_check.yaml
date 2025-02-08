@@ -25,4 +25,5 @@ jobs:
 
       - name: List of AWS
         run: |
+          aws get-caller-identity 
           aws s3 ls
