@@ -1,4 +1,4 @@
-name: Deploy
+name: Nileshmohit_oidc_test
 
 on:
   push:
